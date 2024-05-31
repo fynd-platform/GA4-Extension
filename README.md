@@ -42,7 +42,7 @@ Before setting up the extension, make sure you have the following installed:
 3. Use Git to clone the repository to your local machine and navigate into the project directory.
 
     ```bash
-    git clone git@ssh.dev.azure.com:v3/GoFynd/FyndPlatformExtensions/ga4
+    git clone https://github.com/fynd-platform/GA4-Extension
     ```
 
 4. **Install Backend Dependencies**
