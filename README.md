@@ -96,8 +96,7 @@ Before setting up the extension, make sure you have the following installed:
     ```bash
     ngrok http 3000
     ```
-
-Replace `3000` with the actual port number your server is using. This will generate a public URL that securely tunnels to your local server.
+    Replace `3000` with the actual port number your server is using. This will generate a public URL that securely tunnels to your local server.
 
 
 11. Update default env value for `GA4_MAIN_DOMAIN` with this URL in `BROWSER_CONFIG.HOST_MAIN_URL`.
