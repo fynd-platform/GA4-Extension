@@ -1,5 +1,5 @@
 /src/vue-server.js
-/src/views/extensions/Details.vue
+# /src/views/extensions/Details.vue
 /src/services/rest/server.engine.js
 /src/mixins/form.mixin.js
 /src/assets/*

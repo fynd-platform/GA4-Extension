@@ -14,7 +14,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.{js,vue}',
     '!**/node_modules/**',
-    '!./src/views/extensions/Details.vue', // Deprecated Application selection page
+    // '!./src/views/extensions/Details.vue', // Deprecated Application selection page
     '!./src/vue-server.js', // Unused
     '!./src/services/rest/server.engine.js', // Unused
     '!./src/mixins/form.mixin.js', // Unused
