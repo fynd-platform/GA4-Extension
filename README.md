@@ -9,8 +9,9 @@ Get started with the Google Analytics Extension.
 
 ![Google Analytics Extension Architecture](./Google_Analytics.png)
 
-### Quick Links
+## Quick Links
 
+| [Fynd Platform](https://platform.fynd.com/) | [Fynd Partners](https://partners.fynd.com/) | [Documentation](https://documentation.fynd.com/) |
 
 ## Prerequisites
 
@@ -24,30 +25,32 @@ Before setting up the extension, make sure you have the following installed:
 
 ## Project Setup
 
-#### Partners Panel
+### Fynd Partners Panel
 
-1. Register on our partners panel [here](https://partners.fynd.com/).
+1. Register on our [Partners panel](https://partners.fynd.com/).
 2. After registration, you can be added to an existing Partner Organization or you can create a new organization.
 3. Once you are associated with an organization, navigate to `Extension > Create Extension > Start from scratch`, fill in the required details, and then click on the `Create Extension` button.
 4. After successfully creating the extension, it will appear in the list of organization extensions. 
 5. Open your extension to proceed.
 6. In the Extension overview, within the 'Client Credentials' section, you will find your `API Key` and `API Secret` for further development.
 
-#### Local Setup
+### Local Setup
 
 1. **Start MongoDB.**
 
    Ensure MongoDB (v4.4.x or above) is installed on your machine. Start the MongoDB service.
+
 2. **Start Redis Server.**
 
    Ensure Redis is installed on your machine. Start the Redis server.
+
 3. Use Git to clone the repository to your local machine and navigate into the project directory.
 
     ```bash
     git clone https://github.com/fynd-platform/GA4-Extension
     ```
 
-4. **Install Backend Dependencies**
+4. **Install Backend Dependencies.**
 
    Ensure you have Node.js (v16.x.x or above) installed.
 
@@ -55,20 +58,21 @@ Before setting up the extension, make sure you have the following installed:
     npm install
     ```
 
-5. **Install Frontend Dependencies**
+5. **Install Frontend Dependencies.**
 
     ```bash
     cd web
     npm install
     ```
 
-6. **Create build of frontend Vue project**
+6. **Create build of frontend Vue project.**
 
     ```bash
     npm run build
     ```
 
-7. **Configure Environment Variables**
+7. **Configure Environment Variables.**
+
    Open the `app/fdk/config.js` file in your project directory. Update the `EXTENSION_API_KEY` and `EXTENSION_API_SECRET` environment variables in `extension.api_key` and `extension.api_secret` with the values obtained from the Partners Panel. These should be set as the default values for the `config` variables.
 
     ```javascript
@@ -88,9 +92,10 @@ Before setting up the extension, make sure you have the following installed:
 
 8. Also update MongoDB and Redis Environment Variables according to your machine.
 
-9. **Secure Tunnel Setup**
+9. **Secure Tunnel Setup.**
 
    Install ngrok or a similar cross-platform application to create secure tunnels, enabling your locally hosted web server to be accessible over the internet.
+
 10. Launch ngrok to forward the port used by your local server.
 
     ```bash
@@ -127,7 +132,7 @@ Before setting up the extension, make sure you have the following installed:
 
 After you have completed the local setup, you can run the test cases to ensure everything is working as expected. Follow these steps to execute the tests:
 
-1. **Navigate to the Project Directory**
+1. **Navigate to the Project Directory.**
 
    If you're not already there, switch to your project's root directory in your terminal.
 
@@ -135,7 +140,7 @@ After you have completed the local setup, you can run the test cases to ensure e
     cd path/to/your/project
     ```
 
-2. **Run Backend Tests**
+2. **Run Backend Tests.**
 
    Execute the backend test cases using the following command:
 
@@ -143,14 +148,16 @@ After you have completed the local setup, you can run the test cases to ensure e
     npm test
     ```
 
-3. **Navigate to the Frontend Directory**
+3. **Navigate to the Frontend Directory.**
+
    From the root of your project, move into the web directory.
 
     ```bash
     cd web
     ```
 
-4. **Run Frontend Tests**
+4. **Run Frontend Tests.**
+
    Execute the Frontend test cases using the following command:
 
     ```bash
@@ -221,24 +228,25 @@ To enable Sentry for error monitoring, update the environment variables in the `
 
 Configuring these variables enables Sentry's error tracking for your application, offering a layer of insight into its stability and helping you maintain a high-quality user experience.
 
-### Platform Panel
+### Fynd Platform Panel
 
-1. Register on our partners portal [here](https://platform.fynd.com/).
-2. After registration, either join an existing Partner Organization or create a new one.
+1. Register on our [Platform panel](https://platform.fynd.com/).
+2. After registration, either join an existing Platform Organization or create a new one.
 3. Upon registration completion, find your organization's ID in the URL, such as `https://platform.uat.fyndx1.de/company/:company-id/home/`.
 4. For a private extension, navigate to Extension > Private Extension. Private extensions are recommended for development purposes.
 5. For a public extension, navigate to Extension > Extension Marketplace.
 6. Locate your extension in the list and click the `Install` button.
 7. For private extensions, add the company ID as a subscriber for the extension in the Partner's Panel. Navigate to your extension in the Partner's Panel, click on the `Add Subscribers` button, enter your `company-id` in the`Subscriber Id` field, and click `Add Subscriber`.
-8. After installation, your extension will be listed under your organization's extensions. Click on your extension to open it.
-9. Your changes from local development will be reflected here.
-
-
+8. After installation, your extension will be listed under your organization's extensions.
+9. Click on your extension to open it.
+10. Your changes from local development will be reflected here.
 
 ---
+
 ## Deployment using Docker
 
 This section provides generic steps to deploy your Dockerized application.
+
 ### Prerequisites
 
 - Docker installed on your local machine
@@ -320,11 +328,10 @@ Below is an example of the commands you might use for a generic deployment proce
     docker run -d -p 80:3000 myusername/myapp:latest
     ```
 
-### Notes
+> **Notes**
+Ensure Docker is installed and configured on your deployment server, and replace `your-username`, `your-app-name`, `your-tag`, `host-port`, and `container-port` with your actual values to successfully pull images from your selected container registry.
 
-- Replace `your-username`, `your-app-name`, `your-tag`, `host-port`, and `container-port` with your actual values.
-- Make sure Docker is installed and configured on your deployment server to pull images from your selected container registry.
-
+*Security Tip:* Always verify the security of your Docker images to prevent unauthorized access.
 
 ---
 
@@ -338,8 +345,6 @@ Our application offers several endpoints designed to monitor its health and read
 - `/_readyz`: This endpoint confirms if the application is prepared to handle requests by checking if all initializations have successfully completed.
 
 These endpoints provide a JSON response with an "ok" status, indicating the health status. A response of { "ok": true } signifies the application is healthy and ready, while { "ok": false } indicates an issue. This functionality ensures Kubernetes actively monitors the application's health and readiness, enhancing reliability and uptime.
-
-
 
 ---
 
