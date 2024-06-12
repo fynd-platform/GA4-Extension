@@ -197,6 +197,8 @@ To leverage New Relic for performance monitoring, update the default values for 
 
 By updating these variables, you can activate New Relic's data collection, offering a comprehensive view of your application's performance.
 
+> **Notes**
+To remove New Relic integration completely, delete the New Relic environment variables in your `app/fdk/config.js` file and uninstall the New Relic package with `npm uninstall newrelic`. Remove `require('./connections/newrelic');` from `app/index.js`. Delete the `app/connections/newrelic.js` and `newrelic.js` files and update your documentation accordingly.
 
 ### Sentry Integration (Optional)
 
@@ -228,11 +230,14 @@ To enable Sentry for error monitoring, update the environment variables in the `
 
 Configuring these variables enables Sentry's error tracking for your application, offering a layer of insight into its stability and helping you maintain a high-quality user experience.
 
+> **Notes**
+To remove Sentry integration, delete Sentry environment variables in `app/fdk/config.js`, uninstall Sentry with `npm uninstall @sentry/node`. Remove `require('./connections/sentry');` from `app/index.js`. Delete the `app/connections/sentry.js` file and update your documentation accordingly.
+
 ### Fynd Platform Panel
 
 1. Register on our [Platform panel](https://platform.fynd.com/).
 2. After registration, either join an existing Platform Organization or create a new one.
-3. Upon registration completion, find your organization's ID in the URL, such as `https://platform.uat.fyndx1.de/company/:company-id/home/`.
+3. Upon registration completion, find your organization's ID in the URL, such as `https://platform.fynd.com/company/:company-id/home/`.
 4. For a private extension, navigate to Extension > Private Extension. Private extensions are recommended for development purposes.
 5. For a public extension, navigate to Extension > Extension Marketplace.
 6. Locate your extension in the list and click the `Install` button.
