@@ -1,19 +1,21 @@
-# Google Analytics Extension (GA4)
+# 🚀 Google Analytics Extension (GA4)
+
+![Google Analytics](./images/GA4.webp)
 
 Google Analytics is one of the most popular tools for tracking website traffic and collecting visitor insights. This extension uses GA4 which is a recently launched upgraded version of Google Analytics. The tool assists you with identifying the top sources of user traffic, evaluating your marketing campaigns and activities, tracking goals (like purchases or adding products to carts), finding patterns and trends in user engagement, as well as finding demographic information about your visitors.
 
 
-## Getting started
+## 🎉 Getting started
 
 Get started with the Google Analytics Extension.
 
-![Google Analytics Extension Architecture](./Google_Analytics.png)
+![Google Analytics Extension Architecture](./images/Google_Analytics.png)
 
-## Quick Links
+## 🔗 Quick Links
 
-| [Fynd Platform](https://platform.fynd.com/) | [Fynd Partners](https://partners.fynd.com/) | [Documentation](https://documentation.fynd.com/) |
+| [🌐 Fynd Platform](https://platform.fynd.com/) | [🤝 Fynd Partners](https://partners.fynd.com/) | [📚 Documentation](https://documentation.fynd.com/) |
 
-## Prerequisites
+## 🛠️ Prerequisites
 
 Before setting up the extension, make sure you have the following installed:
 
@@ -23,9 +25,9 @@ Before setting up the extension, make sure you have the following installed:
 
 ---
 
-## Project Setup
+## 📦 Project Setup
 
-### Fynd Partners Panel
+### 🔑 Fynd Partners Panel
 
 1. Register on our [Partners panel](https://partners.fynd.com/).
 2. After registration, you can be added to an existing Partner Organization or you can create a new organization.
@@ -34,7 +36,7 @@ Before setting up the extension, make sure you have the following installed:
 5. Open your extension to proceed.
 6. In the Extension overview, within the 'Client Credentials' section, you will find your `API Key` and `API Secret` for further development.
 
-### Local Setup
+### 💻 Local Setup
 
 1. **Start MongoDB.**
 
@@ -128,7 +130,7 @@ Before setting up the extension, make sure you have the following installed:
 
 14. You are ready to go.
 
-### Running Test Cases
+### 🧪 Running Test Cases
 
 After you have completed the local setup, you can run the test cases to ensure everything is working as expected. Follow these steps to execute the tests:
 
@@ -166,7 +168,7 @@ After you have completed the local setup, you can run the test cases to ensure e
 
 Running both sets of tests ensures a comprehensive check of both the frontend and backend of your extension. We aim for over 90% test coverage to maintain a robust and reliable codebase.
 
-### Newrelic Integration (Optional)
+### 🔍 Newrelic Integration (Optional)
 
 The Google Analytics Extension (GA4) comes pre-configured for integration with New Relic, allowing you to monitor your application's performance in real-time. This feature provides insights to help you improve and optimize your extension efficiently.
 
@@ -200,7 +202,7 @@ By updating these variables, you can activate New Relic's data collection, offer
 > **Notes :**
 To remove New Relic integration completely, delete the New Relic environment variables in your `app/fdk/config.js` file and uninstall the New Relic package with `npm uninstall newrelic`. Remove `require('./connections/newrelic');` from `app/index.js`. Delete the `app/connections/newrelic.js` and `newrelic.js` files and update your documentation accordingly.
 
-### Sentry Integration (Optional)
+### 🚨 Sentry Integration (Optional)
 
 Similar to New Relic, the Google Analytics Extension (GA4) comes pre-configured for optional integration with Sentry. Sentry provides real-time error tracking and monitoring, offering insights to quickly identify, diagnose, and fix issues, thereby enhancing your extension's reliability and user experience.
 
@@ -233,7 +235,7 @@ Configuring these variables enables Sentry's error tracking for your application
 > **Notes :**
 To remove Sentry integration, delete Sentry environment variables in `app/fdk/config.js`, uninstall Sentry with `npm uninstall @sentry/node`. Remove `require('./connections/sentry');` from `app/index.js`. Delete the `app/connections/sentry.js` file and update your documentation accordingly.
 
-### Fynd Platform Panel
+### 📋 Fynd Platform Panel
 
 1. Register on our [Platform panel](https://platform.fynd.com/).
 2. After registration, either join an existing Platform Organization or create a new one.
@@ -247,13 +249,13 @@ To remove Sentry integration, delete Sentry environment variables in `app/fdk/co
 10. Your changes from local development will be reflected here.
 
 
-### Code Quality Checks
+### 💎 Code Quality Checks
 
 This project enforces code quality and consistency using ESLint and Prettier. Before committing, Husky pre-commit hooks run to ensure all code complies with our standards and all tests pass. Please ensure you've addressed any linting errors and test failures before pushing your commits.
 
 ---
 
-## Deployment using Docker
+## 🚢 Deployment using Docker
 
 This section provides generic steps to deploy your Dockerized application.
 
@@ -345,7 +347,7 @@ Ensure Docker is installed and configured on your deployment server, and replace
 
 ---
 
-## Health Check Endpoints and Container Orchestration
+## ✅ Health Check Endpoints and Container Orchestration
 
 Our application offers several endpoints designed to monitor its health and readiness, particularly beneficial in containerized environments such as Docker or Kubernetes:
 
@@ -358,7 +360,7 @@ These endpoints provide a JSON response with an "ok" status, indicating the heal
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Checkout [CONTRIBUTING.md](CONTRIBUTING.md) for more information on how to get started contributing to this repository.
 
