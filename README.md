@@ -197,7 +197,7 @@ To leverage New Relic for performance monitoring, update the default values for 
 
 By updating these variables, you can activate New Relic's data collection, offering a comprehensive view of your application's performance.
 
-> **Notes**
+> **Notes :**
 To remove New Relic integration completely, delete the New Relic environment variables in your `app/fdk/config.js` file and uninstall the New Relic package with `npm uninstall newrelic`. Remove `require('./connections/newrelic');` from `app/index.js`. Delete the `app/connections/newrelic.js` and `newrelic.js` files and update your documentation accordingly.
 
 ### Sentry Integration (Optional)
@@ -230,7 +230,7 @@ To enable Sentry for error monitoring, update the environment variables in the `
 
 Configuring these variables enables Sentry's error tracking for your application, offering a layer of insight into its stability and helping you maintain a high-quality user experience.
 
-> **Notes**
+> **Notes :**
 To remove Sentry integration, delete Sentry environment variables in `app/fdk/config.js`, uninstall Sentry with `npm uninstall @sentry/node`. Remove `require('./connections/sentry');` from `app/index.js`. Delete the `app/connections/sentry.js` file and update your documentation accordingly.
 
 ### Fynd Platform Panel
@@ -333,7 +333,7 @@ Below is an example of the commands you might use for a generic deployment proce
     docker run -d -p 80:3000 myusername/myapp:latest
     ```
 
-> **Notes**
+> **Notes :**
 Ensure Docker is installed and configured on your deployment server, and replace `your-username`, `your-app-name`, `your-tag`, `host-port`, and `container-port` with your actual values to successfully pull images from your selected container registry.
 
 *Security Tip:* Always verify the security of your Docker images to prevent unauthorized access.
