@@ -246,6 +246,11 @@ To remove Sentry integration, delete Sentry environment variables in `app/fdk/co
 9. Click on your extension to open it.
 10. Your changes from local development will be reflected here.
 
+
+### Code Quality Checks
+
+This project enforces code quality and consistency using ESLint and Prettier. Before committing, Husky pre-commit hooks run to ensure all code complies with our standards and all tests pass. Please ensure you've addressed any linting errors and test failures before pushing your commits.
+
 ---
 
 ## Deployment using Docker
