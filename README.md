@@ -2,10 +2,8 @@
 
 
 <p align="center">
-![Google Analytics](./images/GA4.png)
+  <img height="300" src="./images/GA4.png" alt="Google Analytics">
 </p>
-
-![Google Analytics](./images/GA4.png)
 
 Google Analytics is one of the most popular tools for tracking website traffic and collecting visitor insights. This extension uses GA4 which is a recently launched upgraded version of Google Analytics. The tool assists you with identifying the top sources of user traffic, evaluating your marketing campaigns and activities, tracking goals (like purchases or adding products to carts), finding patterns and trends in user engagement, as well as finding demographic information about your visitors.
 
