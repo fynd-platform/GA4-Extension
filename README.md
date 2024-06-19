@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img height="300" src="images/GA4.png" alt="Google Analytics">
+  <img height="300" src="/images/GA4.png" alt="Google Analytics">
 </p>
 
 
