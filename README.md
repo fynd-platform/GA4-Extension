@@ -256,9 +256,11 @@ To remove Sentry integration, delete the Sentry environment variables in your `a
 
 ### 📋 Fynd Platform Panel
 
-  <a target="_blank" href="https://platform.fynd.com/">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd-platform.png" alt="Fynd Platform" />
-  </a>
+  <p align="center">
+    <a target="_blank" href="https://platform.fynd.com/">
+      <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd-platform.png" alt="Fynd Platform" />
+    </a>
+  </p>
 
 1. 📝 Register on our [Platform panel](https://platform.fynd.com/).
 2. 👥 After registration, either join an existing Platform Organization or create a new one.
