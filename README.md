@@ -16,7 +16,7 @@ Get started with the Google Analytics Extension.
 
 ## 🔗 Quick Links
 
-| [🌐 Fynd Platform](https://platform.fynd.com/) | [🤝 Fynd Partners](https://partners.fynd.com/) | [📚 Documentation](https://documentation.fynd.com/) |
+| [🌐 Fynd Platform](https://platform.fynd.com/) | [🤝 Fynd Partners](https://partners.fynd.com/) | [📚 Documentation](https://documentation.fynd.com/) | [📚 Extension Documentation](https://partners.fynd.com/help/docs/partners/getting-started/overview) |
 
 ## 🛠️ Prerequisites
 
