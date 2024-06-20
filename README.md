@@ -44,7 +44,7 @@ Before setting up the extension, make sure you have the following installed:
    Ensure MongoDB (v4.4.x or above) is installed on your machine. Start the MongoDB service.
 
 <p align="center">
-  <a href="https://www.mongodb.com/try/download/community">
+  <a target="_blank" href="https://www.mongodb.com/try/download/community">
     <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/mongodb.png" alt="MongoDB" />
   </a>
 </p>
@@ -54,7 +54,7 @@ Before setting up the extension, make sure you have the following installed:
    Ensure Redis is installed on your machine. Start the Redis server.
 
 <p align="center">
-  <a href="https://redis.io/downloads/">
+  <a target="_blank" href="https://redis.io/downloads/">
     <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/redis.png" width="496" height="160"  alt="Redis" />
   </a>
 </p>
@@ -112,7 +112,7 @@ Before setting up the extension, make sure you have the following installed:
    Install ngrok or a similar cross-platform application to create secure tunnels, enabling your locally hosted web server to be accessible over the internet.
 
 <p align="center">
-  <a href="https://ngrok.com/download">
+  <a target="_blank" href="https://ngrok.com/download">
     <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/ngrok.png" alt="Ngrok" />
   </a>
 </p>
