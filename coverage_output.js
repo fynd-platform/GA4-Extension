@@ -16,14 +16,6 @@ let webData = fs.readFileSync(
 );
 data = JSON.parse(data).total;
 webData = JSON.parse(webData).total;
-// const data = {
-//     "coverage_pct": 80.51,
-//     "lines_total": 10038,
-//     "lines_covered": 5171,
-//     "branch_pct": 32.04,
-//     "branches_covered": 1655,
-//     "branches_total": 5166
-//  }
 
 // let output = data;
 // let output = {
