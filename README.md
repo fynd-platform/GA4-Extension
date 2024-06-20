@@ -44,7 +44,9 @@ Before setting up the extension, make sure you have the following installed:
    Ensure MongoDB (v4.4.x or above) is installed on your machine. Start the MongoDB service.
 
 <p align="center">
-  <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/mongodb.png" alt="MongoDB" href="https://www.mongodb.com/try/download/community" />
+  <a href="https://www.mongodb.com/try/download/community">
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/mongodb.png" alt="MongoDB" />
+  </a>
 </p>
 
 2. **🔄 Start Redis Server.**
@@ -52,7 +54,9 @@ Before setting up the extension, make sure you have the following installed:
    Ensure Redis is installed on your machine. Start the Redis server.
 
 <p align="center">
-  <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/redis.png" width="496" height="160" href="https://redis.io/downloads/" alt="Redis" />
+  <a href="https://redis.io/downloads/">
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/redis.png" width="496" height="160"  alt="Redis" />
+  </a>
 </p>
 
 3. **📁 Use Git to clone the repository to your local machine and navigate into the project directory.**
@@ -108,7 +112,9 @@ Before setting up the extension, make sure you have the following installed:
    Install ngrok or a similar cross-platform application to create secure tunnels, enabling your locally hosted web server to be accessible over the internet.
 
 <p align="center">
-  <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/ngrok.png" alt="Ngrok" href="https://ngrok.com/download" />
+  <a href="https://ngrok.com/download">
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/ngrok.png" alt="Ngrok" />
+  </a>
 </p>
 
 10. 🚀 Launch ngrok to forward the port used by your local server.
