@@ -1,7 +1,9 @@
 # 🚀 Google Analytics Extension (GA4)
 
 <p align="center">
-  <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/GA4.png" alt="Google Analytics" />
+  <a target="_blank" href="https://analytics.google.com/analytics/attribution/onboardingy">
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/GA4.png" alt="Google Analytics" />
+  </a>
 </p>
 
 Google Analytics is one of the most popular tools for tracking website traffic and collecting visitor insights. This extension uses GA4 which is a recently launched upgraded version of Google Analytics. The tool assists you with identifying the top sources of user traffic, evaluating your marketing campaigns and activities, tracking goals (like purchases or adding products to carts), finding patterns and trends in user engagement, as well as finding demographic information about your visitors.
