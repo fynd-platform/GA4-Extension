@@ -1,7 +1,7 @@
 # 🚀 Google Analytics Extension (GA4)
 
 <p align="center">
-  <a target="_blank" href="https://analytics.google.com/analytics/attribution/onboardingy">
+  <a target="_blank" href="https://analytics.google.com/">
     <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/GA4.png" alt="Google Analytics" />
   </a>
 </p>
