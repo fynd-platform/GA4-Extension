@@ -1,7 +1,5 @@
 <template>
   <div class="main-container">
-    <!-- <ga-loader /> -->
-
     <div class="title-container">
       <span
         class="back-icon"
@@ -24,17 +22,13 @@
 </template>
 
 <script>
-// import { NitrozenBadge } from '@gofynd/nitrozen-vue';
-// import loaderVue from "../../components/common/loader.vue";
 import { getCompanyBasePath, getApplication, getCompany } from '@/helper/utils';
 import inlineSvg from '@/components/common/inline-svg.vue';
 import { useMeta } from 'vue-meta';
 
 export default {
   components: {
-    // "ga-loader": loaderVue,
     inlineSvg,
-    // NitrozenBadge,
   },
   setup() {
     useMeta({ title: 'GA4 Extension' });

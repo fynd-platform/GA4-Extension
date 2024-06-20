@@ -8,9 +8,6 @@
         Home
       </div>
       <div class="separator">></div>
-      <!-- <div class="title selected">
-        {{ $route.params.name }}
-      </div> -->
     </div>
     <ga-loader :is-loading="isLoading" />
     <div class="toggel-container">
@@ -128,14 +125,12 @@ export default {
   },
 
   async mounted() {
-    // this.$root.$emit("loading-start");
     this.isLoading = true;
     const tagconfig = await MainService.getTagConfig(this.id);
     if (tagconfig.data) {
       this.tagConfig = tagconfig.data;
       this.application_status = tagconfig.data.enabled;
     }
-    // this.$root.$emit("loading-end");
     this.isLoading = false;
   },
 
@@ -156,7 +151,6 @@ export default {
         } else {
           this.tagConfig.enabled = true;
         }
-        // this.$root.$emit("loading-start");
         this.isLoading = true;
         MainService.saveTagConfig(this.tagConfig)
           .then(({ data }) => {
@@ -170,7 +164,6 @@ export default {
             console.log(err, err.response);
           })
           .finally(() => {
-            // this.$root.$emit("loading-end");
             this.isLoading = false;
           });
       }
@@ -178,14 +171,6 @@ export default {
     onToggel() {
       this.initialstate = false;
     },
-    // goToCustomScript() {
-    //   this.$router.push({
-    //     name: "custom-event",
-    //     params: {
-    //       selected_application: this.id,
-    //     },
-    //   });
-    // },
 
     validateGA() {
       this.tagConfig.ga_id = this.tagConfig.ga_id?.trim();
