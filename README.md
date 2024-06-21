@@ -2,10 +2,10 @@
 
 <p align="center">
   <a target="_blank" href="https://analytics.google.com/" style="display: inline-block;">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/GA4.png" alt="Google Analytics" style="max-width: 45%; height: auto; margin-right: 10px;" />
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics" style="max-width: 45%; height: auto; margin-right: 10px; padding-left: 15px; border-right: 1px solid black;" />
   </a>
   <a target="_blank" href="https://partners.fynd.com/help/docs/partners/getting-started/overview" style="display: inline-block;" >
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Google Analytics" style="max-width: 45%; height: auto;" />
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Fynd Platform Extension" style="max-width: 45%; height: auto; padding-left: 15px;" />
   </a>
 </p>
 
@@ -16,7 +16,7 @@ Google Analytics is one of the most popular tools for tracking website traffic a
 Relation of Extensions with Fynd Platform.
 
 <p align="center">
-  <a target="_blank" href="https://analytics.google.com/">
+  <a target="_blank" href="https://partners.fynd.com/help/docs/partners/getting-started/overview">
     <img src="https://cdn.pixelbin.io/doc/original/searchlight/ext/extension-interaction.png" alt="Relation of Extensions with Fynd Platform" />
   </a>
 </p>
@@ -58,7 +58,7 @@ Before setting up the extension, make sure you have the following installed:
 
 <p align="center">
   <a target="_blank" href="https://www.mongodb.com/try/download/community">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/mongodb.png" alt="MongoDB" />
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Mongo.png" alt="MongoDB" />
   </a>
 </p>
 
