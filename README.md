@@ -126,7 +126,7 @@ Before setting up the extension, make sure you have the following installed:
 
 <p align="center">
   <a target="_blank" href="https://ngrok.com/download">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/ngrok.png" alt="Ngrok" />
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/ngrok-logo.png" alt="Ngrok" />
   </a>
 </p>
 
