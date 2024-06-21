@@ -1,0 +1,48 @@
+@import './less/theme.less';
+@import './less/media.less';
+@import './less/variables.less';
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mirage-scrollbar {
+  /* scrollbar */
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: @White;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    background-color: @White;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2.5px;
+    background-color: @DoveGray;
+  }
+}
+
+.loading {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  background: hsla(0, 0%, 83%, 0.8);
+  @media @mobile {
+    width: 100%;
+    left: 0px;
+  }
+  span {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

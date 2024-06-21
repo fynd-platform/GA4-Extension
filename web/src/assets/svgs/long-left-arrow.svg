@@ -1,0 +1,21 @@
+<svg width="20" height="20" fill="#2e31be" viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg">
+  <g id="prefix__Link-Shortner" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="prefix__Deeplink_Create" transform="translate(-24 -12)">
+      <g id="prefix__Group-4">
+        <g id="prefix__Group" transform="translate(24 12)">
+          <g id="prefix__Group-12">
+            <g id="prefix__Group-10">
+              <path id="prefix__Rectangle" fill-opacity=".01" fill="#FFF" d="M0 0h24v24H0z"></path>
+              <g id="prefix__Group-7" transform="translate(2.4 4.8)" stroke="#2e31be" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path id="prefix__Stroke-1" d="M7.6 14.8.4 7.6"></path>
+                <path id="prefix__Stroke-3" d="M7.6.4.4 7.6"></path>
+                <path id="prefix__Stroke-5" d="M18.8 7.6H.4"></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

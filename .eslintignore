@@ -1,0 +1,6 @@
+/public/
+/coverage/
+/coverage_output.js
+/app/scripts/replaceTagScriptId.js
+
+web/

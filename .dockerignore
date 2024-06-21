@@ -1,0 +1,13 @@
+.dockerignore
+.gitignore
+.vscode
+README.md
+CONTRIBUTING.md
+LICENSE
+.git
+coverage
+build
+node_modules
+npm-debug.log
+Dockerfile*
+docker-compose*

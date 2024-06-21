@@ -1,0 +1,36 @@
+@import './reset.less';
+@import './../../node_modules/@gofynd/nitrozen-vue/dist/nitrozen.css';
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter;
+  width: 100%;
+  background-color: #f8f8f8;
+  height: 100%;
+  @media @mobile {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.bold-lg {
+  font-weight: 700;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+.cl-Mako {
+  color: @Mako;
+}
+
+h3 {
+  font-weight: 600;
+}
+.divider {
+  height: 0.5px;
+  width: 100%;
+  background: @Iron;
+}
