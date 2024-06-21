@@ -2,10 +2,10 @@
 
 <p align="center">
   <a target="_blank" href="https://analytics.google.com/" style="display: inline-block;">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics" style="max-width: 45%; height: auto; margin-right: 10px; padding-left: 15px; border-right: 1px solid black;" width="350" height="130"/>
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics"  width="350" height="130" style="padding-right: 15px; border-right: 1px solid black;" />
   </a>
   <a target="_blank" href="https://partners.fynd.com/help/docs/partners/getting-started/overview" style="display: inline-block;" >
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Fynd Platform Extension" style="max-width: 45%; height: auto; padding-left: 15px;" />
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Fynd Platform Extension" style="padding-left: 15px;" />
   </a>
 </p>
 
