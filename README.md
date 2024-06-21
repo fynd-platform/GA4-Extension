@@ -58,7 +58,7 @@ Before setting up the extension, make sure you have the following installed:
 
 <p align="center">
   <a target="_blank" href="https://www.mongodb.com/try/download/community">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Mongo.png" alt="MongoDB" />
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Mongo.png" alt="MongoDB" width="490" height="160" />
   </a>
 </p>
 
