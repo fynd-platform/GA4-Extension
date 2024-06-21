@@ -2,7 +2,7 @@
 
 <p align="center">
   <a target="_blank" href="https://analytics.google.com/" style="display: inline-block;">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics" style="max-width: 45%; height: auto; margin-right: 10px; padding-left: 15px; border-right: 1px solid black;" />
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics" style="max-width: 45%; height: auto; margin-right: 10px; padding-left: 15px; border-right: 1px solid black;" width="350" height="130"/>
   </a>
   <a target="_blank" href="https://partners.fynd.com/help/docs/partners/getting-started/overview" style="display: inline-block;" >
     <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Fynd Platform Extension" style="max-width: 45%; height: auto; padding-left: 15px;" />
