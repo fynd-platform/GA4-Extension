@@ -1,12 +1,8 @@
 # 🚀 Google Analytics Extension (GA4)
 
 <p align="center">
-  <a target="_blank" href="https://analytics.google.com/" style="text-decoration: none;">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics"  width="350" height="130" />
-  </a>
-  <a target="_blank" href="https://partners.fynd.com/help/docs/partners/getting-started/overview" style="text-decoration: none;">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Fynd Platform Extension" />
-  </a>
+  <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics"  width="300" height="130" />
+  <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Fynd Platform Extension" />
 </p>
 
 Google Analytics is one of the most popular tools for tracking website traffic and collecting visitor insights. This extension uses GA4 which is a recently launched upgraded version of Google Analytics. The tool assists you with identifying the top sources of user traffic, evaluating your marketing campaigns and activities, tracking goals (like purchases or adding products to carts), finding patterns and trends in user engagement, as well as finding demographic information about your visitors.
