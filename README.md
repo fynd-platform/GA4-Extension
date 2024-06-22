@@ -1,10 +1,10 @@
 # 🚀 Google Analytics Extension (GA4)
 
 <p align="center">
-  <a target="_blank" href="https://analytics.google.com/">
+  <a target="_blank" href="https://analytics.google.com/" style="text-decoration: none;">
     <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics"  width="350" height="130" />
   </a>
-  <a target="_blank" href="https://partners.fynd.com/help/docs/partners/getting-started/overview">
+  <a target="_blank" href="https://partners.fynd.com/help/docs/partners/getting-started/overview" style="text-decoration: none;">
     <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Fynd Platform Extension" />
   </a>
 </p>
@@ -15,7 +15,7 @@ Google Analytics is one of the most popular tools for tracking website traffic a
 
 Relation of Extensions with Fynd Platform.
 
-![Google Analytics Extension Architecture](./images/Google_Analytics.png)
+![Google Analytics Extension Architecture](./images/images/GA4-Architecture.png)
 
 Get started with the Google Analytics Extension.
 
