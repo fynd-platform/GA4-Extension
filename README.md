@@ -1,7 +1,7 @@
 # 🚀 Google Analytics Extension (GA4)
 
 <p align="center">
-  <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics"  width="300" height="130" style="border-right: 1px solid black;" />
+  <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Analytics.png" alt="Google Analytics"  width="300" height="130" style="padding: 15px" />
   <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Fynd Platform Extension" />
 </p>
 
