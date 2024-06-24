@@ -1,5 +1,11 @@
 name: Gitleaks check
 on: [pull_request, push, workflow_dispatch]
+
+permissions:
+  contents: read
+  discussions: write
+  pull-requests: write
+
 jobs:
   scan:
     name: gitleaks
