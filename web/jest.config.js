@@ -19,6 +19,14 @@ module.exports = {
     '!./src/services/rest/server.engine.js', // Unused
     '!./src/mixins/form.mixin.js', // Unused
   ],
+  coverageThreshold: {
+    global: {
+      branches: 70,
+      functions: 80,
+      lines: 85,
+      statements: 85,
+    },
+  },
   moduleFileExtensions: ['js', 'json', 'vue'],
   transformIgnorePatterns: ['node_modules/(?!(\\@gofynd/nitrozen-vue)/)'],
 };
