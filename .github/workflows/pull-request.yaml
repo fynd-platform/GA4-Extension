@@ -41,4 +41,4 @@ jobs:
 
       # Collect coverage
       - name: Collect coverage
-        run: npm run coverage_output.js
+        run: node coverage_output.js
