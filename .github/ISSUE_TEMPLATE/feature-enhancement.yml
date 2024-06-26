@@ -1,0 +1,73 @@
+name: ✨ Feature/Enhancement
+description: Add new feature or enhancement
+title: "[Feature] <title>"
+labels: [feature, enhancement, refactor, optimization]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for taking the time to contribute! 🚀
+        Before submitting your request, please make sure to check the existing issues to avoid duplicates.
+  - type: dropdown
+    id: feature_type
+    attributes:
+      label: Is this a request for a new feature or an enhancement to an existing one?
+      multiple: false
+      options:
+        - New Feature
+        - Enhancement/Optimization/Refactor
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Feature/Enhancement Name
+      description: A short, descriptive name for the feature or enhancement.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Summary
+      description: A concise summary of the feature or improvement.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Motivation
+      description: Please describe the motivation behind this request. How does it improve the project?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Detailed Description
+      description: Provide a detailed description of the change or addition you are proposing.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Potential Impact
+      description: How might this feature or enhancement impact existing functionality? Consider both positive impacts and potential issues.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Implementation Ideas
+      description: If you have ideas about how this feature or enhancement could be implemented, please share them here.
+    validations:
+      required: false
+  - type: dropdown
+    id: breaking_change
+    attributes:
+      label: Does this request involve a breaking change?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
+

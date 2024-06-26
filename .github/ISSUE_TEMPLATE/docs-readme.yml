@@ -1,0 +1,35 @@
+name: 📚 Documentation/README Update
+description: Propose updates to documentation or the README file
+title: "[Docs] <title>"
+labels: [documentation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for contributing to our documentation! 🌟
+        Before you submit your request, please make sure to check if there's an existing issue related to your proposal to avoid duplicates.
+  - type: input
+    attributes:
+      label: Documentation Section
+      description: Indicate which section or file in the documentation or README you're proposing to update.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed Changes
+      description: Please describe the changes you propose. Include any specific lines or paragraphs if applicable.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Motivation and Goals
+      description: Explain why these changes are necessary and how they will improve the documentation.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Provide any other context about the proposed changes, such as links to related issues, discussions, or pull requests.
+    validations:
+      required: false
+

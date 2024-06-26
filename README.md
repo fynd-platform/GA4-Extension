@@ -1,8 +1,9 @@
 # 🚀 Google Analytics Extension (GA4)
 
 <p align="center">
-  <a target="_blank" href="https://analytics.google.com/">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/GA4.png" alt="Google Analytics" />
+  <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Googleanalytics.png" alt="Google Analytics"  width="300" />
+  <a target="_blank" href="https://partners.fynd.com/help/docs/partners/getting-started/overview">
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Fynd_Extensions.png" alt="Fynd Platform Extension" />
   </a>
 </p>
 
@@ -10,9 +11,13 @@ Google Analytics is one of the most popular tools for tracking website traffic a
 
 ## 🎉 Getting started
 
+Relation of Extensions with Fynd Platform.
+
+![Google Analytics Extension Architecture](./images/GA4-Architecture.png)
+
 Get started with the Google Analytics Extension.
 
-![Google Analytics Extension Architecture](./images/Google_Analytics.png)
+![Google Analytics Extension Data Flow](./images/Google_Analytics.png)
 
 ## 🔗 Quick Links
 
@@ -47,7 +52,7 @@ Before setting up the extension, make sure you have the following installed:
 
 <p align="center">
   <a target="_blank" href="https://www.mongodb.com/try/download/community">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/mongodb.png" alt="MongoDB" />
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/Mongo.png" alt="MongoDB" width="490" height="160" />
   </a>
 </p>
 
@@ -115,7 +120,7 @@ Before setting up the extension, make sure you have the following installed:
 
 <p align="center">
   <a target="_blank" href="https://ngrok.com/download">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/ngrok.png" alt="Ngrok" />
+    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/ngrok-logo.png" alt="Ngrok" />
   </a>
 </p>
 
