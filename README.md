@@ -394,5 +394,3 @@ These endpoints provide a JSON response with an "ok" status, indicating the heal
 Checkout [CONTRIBUTING.md](CONTRIBUTING.md) for more information on how to get started contributing to this repository.
 
 ****
-
-test
