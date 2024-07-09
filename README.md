@@ -7,6 +7,9 @@
   </a>
 </p>
 
+<!-- README.md -->
+[![cov](https://fynd-platform.github.io/GA4-Extension/badges/coverage.svg)](https://github.com/<you>/GA4-Extension/actions)
+
 Google Analytics is one of the most popular tools for tracking website traffic and collecting visitor insights. This extension uses GA4 which is a recently launched upgraded version of Google Analytics. The tool assists you with identifying the top sources of user traffic, evaluating your marketing campaigns and activities, tracking goals (like purchases or adding products to carts), finding patterns and trends in user engagement, as well as finding demographic information about your visitors.
 
 ## 🎉 Getting started
