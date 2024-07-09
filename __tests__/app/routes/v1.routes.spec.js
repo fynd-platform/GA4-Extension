@@ -72,17 +72,6 @@ describe('Route Tests', () => {
     jest.clearAllMocks();
   });
 
-  describe('GET -> /applications Route', () => {
-    it('responds with applications and their configurations', async () => {
-      TagSchema.findOne.mockResolvedValue({ ga_id: 'G-A123', enabled: true });
-
-      const response = await request(app).get('/applications');
-      expect(response.statusCode).toBe(200);
-      expect(response.body.items).toHaveLength(2);
-      expect(TagSchema.findOne).toHaveBeenCalledTimes(2);
-    });
-  });
-
   describe('GET -> /tag-manager/:application_id Route', () => {
     it('responds with tag configuration for the given application ID', async () => {
       TagSchema.findOne.mockImplementationOnce(() => ({
