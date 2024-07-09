@@ -123,7 +123,7 @@ Before setting up the extension, make sure you have the following installed:
 | **BROWSER_CONFIG.HOST_MAIN_URL** | Host Main URL      | String      | https://2ce6-14-142-183-234.ngrok-free.app                               | GA4_MAIN_DOMAIN                     |
 | **cluster_url**             | Fynd Platform Domain     | String      | https://api.fyndx5.de                               | EXTENSION_CLUSTER_URL               |
 
-    ```javascript
+```javascript
     extension: {
         api_key: {
           doc: 'extension api key',
@@ -136,7 +136,7 @@ Before setting up the extension, make sure you have the following installed:
           env: 'EXTENSION_API_SECRET',
         },
       },
-    ```
+```
 
 8. 🖥️ Also update MongoDB and Redis Environment Variables according to your machine.
 
