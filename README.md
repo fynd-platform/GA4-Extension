@@ -96,6 +96,28 @@ Before setting up the extension, make sure you have the following installed:
 7. **🛠️ Configure Environment Variables.**
 
    Open the `app/fdk/config.js` file in your project directory. Update the `EXTENSION_API_KEY` and `EXTENSION_API_SECRET` environment variables in `extension.api_key` and `extension.api_secret` with the values obtained from the Partners Panel. These should be set as the default values for the `config` variables.
+   
+   This table includes the top-level keys and their subkeys, along with their properties, descriptions, formats, default values, environment variables.
+
+| Field                       | Documentation            | Format      | Default Value                  | Environment Variable                |
+|-----------------------------|--------------------------|-------------|--------------------------------|-------------------------------------|
+| **enable_cors**             | cors toggle              | Boolean     | true                           | ENABLE_CORS                         |
+| **env**                     | node env                 | String      | development                    | NODE_ENV                            |
+| **environment**             | env                      | String      | fynd                         | ENV                                 |
+| **mongo.host.uri**          | host mongo               | mongo-uri   | mongodb://localhost:27017/ga4  | MONGO_GA4_READ_WRITE                |
+| **mongo.host.options.appname** | mongo app name        | String      | ga4                            | K8S_POD_NAME                        |
+| **redis.host**              | Redis URL of host.       | String      | redis://localhost:6379/0       | REDIS_EXTENSIONS_READ_WRITE         |
+| **sentry.dsn**              | sentry url               | String      | <sentry_url>                               | SENTRY_DSN                          |
+| **sentry.environment**      | sentry environment       | String      | development                    | SENTRY_ENVIRONMENT                  |
+| **newrelic.app_name**       | new relic app name       | String      | ga4                               | NEW_RELIC_APP_NAME                  |
+| **newrelic.license_key**    | new relic license key    | String      | <newrelic_license_key>                               | NEW_RELIC_LICENSE_KEY               |
+| **port**                    | The port to bind         | port        | 5050                           | PORT                                |
+| **log_level**               | log level for logger     | String      | info                           | LOG_LEVEL                           |
+| **mode**                    | app mode                 | String      | server                         | MODE                                |
+| **API_KEY**                 | Partners API Key         | String      | <api_key>                               | API_KEY                             |
+| **API_SECRET**              | Partners API Secret      | String      | <api_secret>                               | API_SECRET                          |                      |
+| **BROWSER_CONFIG.HOST_MAIN_URL** | Host Main URL      | String      | <ngrok_url>                               | GA4_MAIN_DOMAIN                     |
+| **cluster_url**             | Fynd Platform Domain     | String      | https://api.fynd.com                               | EXTENSION_CLUSTER_URL               |
 
     ```javascript
     extension: {

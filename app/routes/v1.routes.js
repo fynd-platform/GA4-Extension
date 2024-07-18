@@ -6,33 +6,6 @@ const { omit } = require('lodash');
 const TagSchema = require('../models/Tag');
 const { getGAScriptContent, getInjectScriptObj } = require('../utils/helpers');
 
-router.get('/applications', async (req, res, next) => {
-  try {
-    const {
-      platformClient,
-      query: { page_size: pageSize = 10, page_no: pageNo = 1 },
-    } = req;
-    const applications = await platformClient.configuration.getApplications({
-      companyId: platformClient.config.companyId,
-      pageSize,
-      pageNo,
-      q: '{"is_active": true}',
-    });
-
-    const tagConfigs = await Promise.all(
-      applications.items.map(a => TagSchema.findOne({ application: a._id }))
-    );
-
-    tagConfigs.forEach((a, index) => {
-      applications.items[index].config = a;
-    });
-    return res.json(applications);
-  } catch (err) {
-    console.log(err.response);
-    return next(err);
-  }
-});
-
 router.get('/tag-manager/:application_id', async (req, res, next) => {
   try {
     const applicationId = req.params.application_id;
