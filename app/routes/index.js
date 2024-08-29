@@ -11,7 +11,7 @@ class API {
    * @param {express.Router} app
    */
   static async registerRoutes(app) {
-    // apiRoutes middleware is used Platform Routes 
+    // apiRoutes middleware is used Platform Routes
     const { apiRoutes } = FDKExtension;
     app.use(express.static(path.join(__dirname, '../../', 'public')));
     app.use(FDKExtension.fdkHandler);
