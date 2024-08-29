@@ -101,7 +101,6 @@ Before setting up the extension, make sure you have the following installed:
 
 | Field                       | Documentation            | Format      | Default Value                  | Environment Variable                |
 |-----------------------------|--------------------------|-------------|--------------------------------|-------------------------------------|
-| **enable_cors**             | cors toggle              | Boolean     | true                           | ENABLE_CORS                         |
 | **env**                     | node env                 | String      | development                    | NODE_ENV                            |
 | **environment**             | env                      | String      | fynd                         | ENV                                 |
 | **mongo.host.uri**          | host mongo               | mongo-uri   | mongodb://localhost:27017/ga4  | MONGO_GA4_READ_WRITE                |

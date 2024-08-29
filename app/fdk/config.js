@@ -19,13 +19,6 @@ convict.addFormat({
 });
 
 const config = convict({
-  enable_cors: {
-    doc: 'cors toggle',
-    format: Boolean,
-    default: true,
-    env: 'ENABLE_CORS',
-    arg: 'enable_cors',
-  },
   env: {
     doc: 'node env',
     format: String,

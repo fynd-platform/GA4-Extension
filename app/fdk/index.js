@@ -1,8 +1,8 @@
 const { setupFdk } = require('fdk-extension-javascript/express');
-const { RedisStorage } = require('fdk-extension-javascript/express/storage');
 const extensionHandler = require('./extension_handler');
 const config = require('./config');
-const { appRedis } = require('../connections/redis');
+const { MongoDBStorage } = require('../connections/mongo_storage');
+const { SessionModel } = require('../models/Session');
 
 const baseUrl = config.BROWSER_CONFIG.HOST_MAIN_URL;
 
@@ -12,10 +12,16 @@ const FDKExtension = setupFdk({
   cluster: config.cluster_url,
   base_url: baseUrl,
   callbacks: extensionHandler,
-  storage: new RedisStorage(appRedis, 'ga4'),
+  storage: new MongoDBStorage(SessionModel, 'ga4'),
   access_mode: 'offline',
 });
 
+/**
+ * Initializes and returns an FDK extension instance asynchronously.
+ * This setup is specifically configured for use with MongoDB for session storage.
+ *
+ * @returns {Promise<Object>} A promise that resolves to the FDK extension instance.
+ */
 const getFdkAsync = () =>
   setupFdk(
     {
@@ -24,7 +30,7 @@ const getFdkAsync = () =>
       cluster: config.cluster_url,
       base_url: baseUrl,
       callbacks: extensionHandler,
-      storage: new RedisStorage(appRedis, 'ga4'),
+      storage: new MongoDBStorage(SessionModel, 'ga4'),
       access_mode: 'offline',
     },
     true
