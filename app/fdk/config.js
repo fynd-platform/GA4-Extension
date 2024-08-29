@@ -19,13 +19,6 @@ convict.addFormat({
 });
 
 const config = convict({
-  enable_cors: {
-    doc: 'cors toggle',
-    format: Boolean,
-    default: true,
-    env: 'ENABLE_CORS',
-    arg: 'enable_cors',
-  },
   env: {
     doc: 'node env',
     format: String,
@@ -65,15 +58,6 @@ const config = convict({
           arg: 'k8s_pod_name',
         },
       },
-    },
-  },
-  redis: {
-    host: {
-      doc: 'Redis URL of host.',
-      format: String,
-      default: 'redis://localhost:6379/0',
-      env: 'REDIS_EXTENSIONS_READ_WRITE',
-      arg: 'redis_extensions_read_write',
     },
   },
   sentry: {

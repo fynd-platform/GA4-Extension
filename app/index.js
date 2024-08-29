@@ -2,7 +2,6 @@ const config = require('./fdk/config');
 const logger = require('./utils/logger');
 // Init
 const mongo = require('./connections/mongo');
-const redis = require('./connections/redis');
 require('./connections/newrelic');
 require('./connections/sentry');
 
@@ -17,7 +16,7 @@ const onServerInit = function () {
 const onDestroy = async function (e) {
   logger.info(`${e} signal received`);
   logger.info('Closing http server.');
-  await Promise.all([redis.appRedis.disconnect(), mongo.host.client.close()]);
+  await Promise.all([mongo.host.client.close()]);
   server.close(() => {
     logger.info('Http server closed.');
     process.exit(0);
