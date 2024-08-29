@@ -122,9 +122,9 @@ Before setting up the extension, make sure you have the following installed:
       },
     ```
 
-8. 🖥️ Also update MongoDB and Redis Environment Variables according to your machine.
+7. 🖥️ Also update MongoDB and Redis Environment Variables according to your machine.
 
-9. **🔒 Secure Tunnel Setup.**
+8. **🔒 Secure Tunnel Setup.**
 
    Install ngrok or a similar cross-platform application to create secure tunnels, enabling your locally hosted web server to be accessible over the internet.
 
@@ -134,14 +134,14 @@ Before setting up the extension, make sure you have the following installed:
   </a>
 </p>
 
-10. 🚀 Launch ngrok to forward the port used by your local server.
+9. 🚀 Launch ngrok to forward the port used by your local server.
 
     ```bash
     ngrok http 3000
     ```
     Replace `3000` with the actual port number your server is using. This will generate a public URL that securely tunnels to your local server.
 
-11. 🌐 Update default env value for `GA4_MAIN_DOMAIN` with this URL in `BROWSER_CONFIG.HOST_MAIN_URL`.
+10. 🌐 Update default env value for `GA4_MAIN_DOMAIN` with this URL in `BROWSER_CONFIG.HOST_MAIN_URL`.
 
     ```javascript
     BROWSER_CONFIG: {
@@ -155,15 +155,15 @@ Before setting up the extension, make sure you have the following installed:
       },
     ```
 
-12. 🛠️ Navigate to your extension in the Partner Panel and update the Extension URL field with the generated ngrok URL.
+11. 🛠️ Navigate to your extension in the Partner Panel and update the Extension URL field with the generated ngrok URL.
 
-13. **💻 Run local server.**
+12. **💻 Run local server.**
 
     ```bash
     npm start
     ```
 
-14. 🎉 You are ready to go.
+13. 🎉 You are ready to go.
 
 ### 🧪 Running Test Cases
 
