@@ -60,15 +60,6 @@ const config = convict({
       },
     },
   },
-  redis: {
-    host: {
-      doc: 'Redis URL of host.',
-      format: String,
-      default: 'redis://localhost:6379/0',
-      env: 'REDIS_EXTENSIONS_READ_WRITE',
-      arg: 'redis_extensions_read_write',
-    },
-  },
   sentry: {
     dsn: {
       doc: 'sentry url',

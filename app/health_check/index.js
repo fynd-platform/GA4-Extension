@@ -3,12 +3,15 @@ const _ = require('lodash');
 const mongoose = require('mongoose');
 const promFileClient = require('prom-file-client');
 const mongoConnections = require('../connections/mongo');
-const redis = require('../connections/redis');
 const config = require('../fdk/config');
 
 let logErrorCounter = {
   labels: () => ({ inc: () => {} }),
 };
+
+/**
+ * This file is used for health checks, essential to ensure optimal Kubernetes application availability and performance
+ */
 
 function startPrometheus() {
   const prometheusClient = promFileClient.prometheus;
@@ -47,18 +50,6 @@ function checkMongoConnection(connection) {
   return true;
 }
 
-async function checkRedisConnection(connection, name) {
-  return new Promise((resolve, reject) => {
-    connection.ping((err, result) => {
-      if (result !== 'PONG' || err) {
-        logErrorCounter.labels('redis', name).inc();
-        reject();
-      }
-      resolve();
-    });
-  });
-}
-
 async function checkHealth(req, res) {
   try {
     // mongo
@@ -68,9 +59,6 @@ async function checkHealth(req, res) {
         throw new Error('Host mongo not connected');
       }
     });
-
-    // redis
-    await Promise.all([checkRedisConnection(redis.appRedis)]);
 
     return res.json({ ok: true });
   } catch (error) {

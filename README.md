@@ -29,7 +29,6 @@ Before setting up the extension, make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/en/download/package-manager) : >= v16.x.x
 - [MongoDB](https://www.mongodb.com/try/download/community) : >= v4.4.x
-- [Redis](https://redis.io/downloads/) : >= 7.0.11
 
 ---
 
@@ -56,23 +55,14 @@ Before setting up the extension, make sure you have the following installed:
   </a>
 </p>
 
-2. **🔄 Start Redis Server.**
 
-   Ensure Redis is installed on your machine. Start the Redis server.
-
-<p align="center">
-  <a target="_blank" href="https://redis.io/downloads/">
-    <img src="https://cdn.pixelbin.io/v2/broken-limit-7ed062/original/redis.png" width="496" height="160"  alt="Redis" />
-  </a>
-</p>
-
-3. **📁 Use Git to clone the repository to your local machine and navigate into the project directory.**
+2. **📁 Use Git to clone the repository to your local machine and navigate into the project directory.**
 
     ```bash
     git clone https://github.com/fynd-platform/GA4-Extension
     ```
 
-4. **📦 Install Backend Dependencies.**
+3. **📦 Install Backend Dependencies.**
 
    Ensure you have Node.js (v16.x.x or above) installed.
 
@@ -80,20 +70,20 @@ Before setting up the extension, make sure you have the following installed:
     npm install
     ```
 
-5. **📦 Install Frontend Dependencies.**
+4. **📦 Install Frontend Dependencies.**
 
     ```bash
     cd web
     npm install
     ```
 
-6. **🔧 Create build of frontend Vue project.**
+5. **🔧 Create build of frontend Vue project.**
 
     ```bash
     npm run build
     ```
 
-7. **🛠️ Configure Environment Variables.**
+6. **🛠️ Configure Environment Variables.**
 
    Open the `app/fdk/config.js` file in your project directory. Update the `EXTENSION_API_KEY` and `EXTENSION_API_SECRET` environment variables in `extension.api_key` and `extension.api_secret` with the values obtained from the Partners Panel. These should be set as the default values for the `config` variables.
    
@@ -105,7 +95,6 @@ Before setting up the extension, make sure you have the following installed:
 | **environment**             | env                      | String      | fynd                         | ENV                                 |
 | **mongo.host.uri**          | host mongo               | mongo-uri   | mongodb://localhost:27017/ga4  | MONGO_GA4_READ_WRITE                |
 | **mongo.host.options.appname** | mongo app name        | String      | ga4                            | K8S_POD_NAME                        |
-| **redis.host**              | Redis URL of host.       | String      | redis://localhost:6379/0       | REDIS_EXTENSIONS_READ_WRITE         |
 | **sentry.dsn**              | sentry url               | String      | <sentry_url>                               | SENTRY_DSN                          |
 | **sentry.environment**      | sentry environment       | String      | development                    | SENTRY_ENVIRONMENT                  |
 | **newrelic.app_name**       | new relic app name       | String      | ga4                               | NEW_RELIC_APP_NAME                  |
