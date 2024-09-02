@@ -106,6 +106,7 @@ Before setting up the extension, make sure you have the following installed:
 | **API_SECRET**              | Partners API Secret      | String      | <api_secret>                               | API_SECRET                          |                      |
 | **BROWSER_CONFIG.HOST_MAIN_URL** | Host Main URL      | String      | <ngrok_url>                               | GA4_MAIN_DOMAIN                     |
 | **cluster_url**             | Fynd Platform Domain     | String      | https://api.fynd.com                               | EXTENSION_CLUSTER_URL               |
+| **app_name**             | App name     | String      | ga4                               | EXTENSION_APP_NAME              |
 
     ```javascript
     extension: {
