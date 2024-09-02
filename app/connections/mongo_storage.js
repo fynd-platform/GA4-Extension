@@ -16,7 +16,6 @@ class MongoDBStorage extends BaseStorage {
   getPrefixKey(key) {
     return this.prefixKey + key;
   }
-
   /**
    * Retrieves the value associated with a key.
    *
