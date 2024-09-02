@@ -12,7 +12,7 @@ const FDKExtension = setupFdk({
   cluster: config.cluster_url,
   base_url: baseUrl,
   callbacks: extensionHandler,
-  storage: new MongoDBStorage(SessionModel, 'ga4'),
+  storage: new MongoDBStorage(SessionModel, config.get('extension.app_name')),
   access_mode: 'offline',
 });
 
@@ -30,7 +30,10 @@ const getFdkAsync = () =>
       cluster: config.cluster_url,
       base_url: baseUrl,
       callbacks: extensionHandler,
-      storage: new MongoDBStorage(SessionModel, 'ga4'),
+      storage: new MongoDBStorage(
+        SessionModel,
+        config.get('extension.app_name')
+      ),
       access_mode: 'offline',
     },
     true
