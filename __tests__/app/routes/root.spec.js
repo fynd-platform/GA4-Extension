@@ -12,25 +12,6 @@ healthCheck.checkHealth.mockImplementation((req, res) => {
   res.json({ ok: true });
 });
 
-jest.mock('../../../app/fdk/config', () => ({
-  sentry: 'test-sentry-dsn',
-  env: 'test',
-  BROWSER_CONFIG: {
-    apiBaseUrl: 'https://api.example.com',
-  },
-  redis: {
-    host: 'mockedHostValue',
-  },
-}));
-
-jest.mock('../../../app/connections/redis.js', () => ({
-  appRedis: {
-    on: jest.fn(),
-    get: jest.fn(),
-    set: jest.fn(),
-  },
-}));
-
 const app = express();
 app.use(router);
 

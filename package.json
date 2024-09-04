@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --fix",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "test": "jest --detectOpenHandles --coverageReporters='json-summary'",
+    "test": "jest --coverageReporters='json-summary' --forceExit",
     "test:coverage": "jest --coverage",
     "prepare": "husky"
   },
@@ -33,7 +33,6 @@
     "express": "^4.17.1",
     "fdk-client-javascript": "git+https://github.com/gofynd/fdk-client-javascript.git#1.3.1",
     "fdk-extension-javascript": "git+https://github.com/gofynd/fdk-extension-javascript.git#v0.6.0",
-    "ioredis": "^4.27.6",
     "lodash": "^4.17.21",
     "mongodb-uri": "^0.9.7",
     "mongoose": "^5.13.20",
