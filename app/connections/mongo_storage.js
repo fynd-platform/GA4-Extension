@@ -13,6 +13,9 @@ class MongoDBStorage extends BaseStorage {
     this.model = model;
   }
 
+  getPrefixKey(key) {
+    return this.prefixKey + key;
+  }
   /**
    * Retrieves the value associated with a key.
    *
@@ -21,7 +24,7 @@ class MongoDBStorage extends BaseStorage {
    */
 
   async get(key) {
-    const doc = await this.model.findOne({ key: this.prefixKey + key });
+    const doc = await this.model.findOne({ key: this.getPrefixKey(key) });
     return doc ? doc.value : null;
   }
 
@@ -34,7 +37,7 @@ class MongoDBStorage extends BaseStorage {
    */
   async set(key, value) {
     await this.model.updateOne(
-      { key: this.prefixKey + key },
+      { key: this.getPrefixKey(key) },
       { value },
       { upsert: true }
     );
@@ -51,7 +54,7 @@ class MongoDBStorage extends BaseStorage {
   async setex(key, value, ttl) {
     const expiresAt = new Date(Date.now() + ttl * 1000);
     await this.model.updateOne(
-      { key: this.prefixKey + key },
+      { key: this.getPrefixKey(key) },
       { $set: { value, expiresAt } },
       { upsert: true }
     );
@@ -64,7 +67,7 @@ class MongoDBStorage extends BaseStorage {
    * @returns {Promise<void>}
    */
   async del(key) {
-    await this.model.deleteOne({ key: this.prefixKey + key });
+    await this.model.deleteOne({ key: this.getPrefixKey(key) });
   }
 
   /**
@@ -75,7 +78,7 @@ class MongoDBStorage extends BaseStorage {
    * @returns {Promise<*>} The value associated with the hash key, or null if not found.
    */
   async hget(key, hashKey) {
-    const doc = await this.model.findOne({ key: this.prefixKey + key });
+    const doc = await this.model.findOne({ key: this.getPrefixKey(key) });
     return doc && doc.hash ? doc.hash[hashKey] : null;
   }
 
@@ -89,7 +92,7 @@ class MongoDBStorage extends BaseStorage {
    */
   async hset(key, hashKey, value) {
     const doc = await this.model.findOneAndUpdate(
-      { key: this.prefixKey + key },
+      { key: this.getPrefixKey(key) },
       { $set: { [`hash.${hashKey}`]: value } },
       { new: true, upsert: true }
     );
@@ -103,7 +106,7 @@ class MongoDBStorage extends BaseStorage {
    * @returns {Promise<Object|null>} An object containing all hash values, or null if not found.
    */
   async hgetall(key) {
-    const doc = await this.model.findOne({ key: this.prefixKey + key });
+    const doc = await this.model.findOne({ key: this.getPrefixKey(key) });
     return doc ? doc.hash : null;
   }
 }

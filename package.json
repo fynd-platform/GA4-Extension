@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --fix",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "test": "jest --coverageReporters='json-summary'",
+    "test": "jest --coverageReporters='json-summary' --forceExit",
     "test:coverage": "jest --coverage",
     "prepare": "husky"
   },

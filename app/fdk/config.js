@@ -161,6 +161,11 @@ const config = convict({
       default: '',
       env: 'EXTENSION_API_SECRET',
     },
+    app_name: {
+      doc: "extension app name",
+      default: "ga4",
+      env: "EXTENSION_APP_NAME"
+    }
   },
 });
 

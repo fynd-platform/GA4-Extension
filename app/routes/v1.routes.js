@@ -3,17 +3,18 @@ const { Router } = require('express');
 const router = Router();
 const deepExtend = require('deep-extend');
 const { omit } = require('lodash');
+const config = require('../fdk/config');
 const TagSchema = require('../models/Tag');
 const { getGAScriptContent, getInjectScriptObj } = require('../utils/helpers');
 
 router.get('/tag-manager/:application_id', async (req, res, next) => {
   try {
     const applicationId = req.params.application_id;
-    const config = await TagSchema.findOne({
+    const applicationConfig = await TagSchema.findOne({
       company_id: req.fdkSession.company_id.toString(),
       application: applicationId,
     }).lean();
-    return res.json(config);
+    return res.json(applicationConfig);
   } catch (err) {
     return next(err);
   }
@@ -41,7 +42,10 @@ router.put('/tag-manager', async (req, res, next) => {
     );
     let scriptContent = getGAScriptContent(tagConfig.ga_id);
     scriptContent = Buffer.from(scriptContent).toString('base64');
-    const reqBody = getInjectScriptObj('ga4', scriptContent);
+    const reqBody = getInjectScriptObj(
+      config.get('extension.app_name'),
+      scriptContent
+    );
     if (tagConfig.enabled) {
       if (!tagConfig.script_id) {
         let response = null;
